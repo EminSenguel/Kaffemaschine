@@ -1,15 +1,20 @@
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.Scanner;
+
 public class Kaffesorten {
 
-    public static void KaffeeSchwarz(){
-        Stärke();
+    private Zutaten z;
+
+    public static void waehlen() {
+        Scanner myScanner = new Scanner(System.in);
+
+        System.out.println("Bitte wähle aus was du möchtest: Kaffeschwaz, Americano, Cappuccino, Kakao");
+        String sorteWaehlen = myScanner.nextLine();
 
     }
 
-    public static void Americano(){
 
-}
-    public static void Stärke(){
 
-}
 
 }
