@@ -10,6 +10,11 @@ public class Kaffesorten {
 }
     public static void Stärke(){
 
+
 }
+    public static void Esspresso(){
+
+
+    }
 
 }
