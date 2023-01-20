@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Zutaten def = new Zutaten(false, 0, false);
 
+
         Sorte black = new Sorte(def, "Black Coffee", false);
         Sorte capp = new Sorte(def, "Cappuccino", true);
 
@@ -28,6 +29,10 @@ public class Main {
         System.out.println("Wollen Sie Milch? ");
         char milk = s.next().charAt(0);
         if (milk == 'y') def.setMilk(true);
+
+        Spiele defS = new Spiele();
+
+        defS.Game();
 
         Kaffee k = new Kaffee(SorteArr.get(sorte-1), BehaelterArr.get(size-1), 2);
         System.out.println("Hier ist Ihr "+k.getS().getName()+" in Größe "+k.getB().getSize()+". "+k.getPrice()+"€ bitte!");
